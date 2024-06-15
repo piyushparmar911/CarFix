@@ -1,4 +1,4 @@
-{% include 'header.html' %} 
+{% include './header.html' %} {% load static %}
 
         <!-- Mobile Responsive Menu -->
 		<div class="mr_menu">
@@ -10,7 +10,7 @@
         <div class="aside_info_wrapper">
 			<button class="aside_close"><i class="bi bi-x-lg"></i></button>
             <div class="aside_logo">
-                <a href="index.html"><img src="assets/img/logo.svg" alt="logo"></a>
+                <a href="index.html"><img src="{% static 'img/logo.svg' %}" alt="logo"></a>
             </div>
 			<div class="aside_info_inner">
 
@@ -81,7 +81,7 @@
                     <div class="wptb-image-single mb-4 d-inline-block wow fadeInUp">
                         <div class="wptb-item--inner">
                             <div class="wptb-item--image">
-                                <img src="assets/img/background/bg-11.jpg" alt="img">
+                                <img src="{% static 'img/background/bg-11.jpg' %}" alt="img">
                             </div>
                         </div>
                     </div>

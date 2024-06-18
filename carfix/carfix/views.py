@@ -35,8 +35,8 @@ def ourTeam(request):
 def shop(request):
     return render(request, 'shop.html')
 
-def products(request):
-    return render(request, 'products.html')
+def product(request):
+    return render(request, 'product.html')
 
 def cart(request):
     return render(request, 'cart.html')

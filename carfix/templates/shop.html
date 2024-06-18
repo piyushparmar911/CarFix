@@ -1,0 +1,945 @@
+{% include 'header.html' %} {% load static %}
+  <!-- Mobile Responsive Menu -->
+  <div class="mr_menu">
+    <button type="button" class="mr_menu_close"><i class="bi bi-x-lg"></i></button>
+    <div class="logo"></div> <!-- Keep this div empty. Logo will come here by JavaScript -->
+    <div class="mr_navmenu"></div> <!-- Keep this div empty. Menu will come here by JavaScript -->
+</div>
+
+<div class="aside_info_wrapper">
+    <button class="aside_close"><i class="bi bi-x-lg"></i></button>
+    <div class="aside_logo">
+        <a href="index.html"><img src="/static/img/logo.svg" alt="logo"></a>
+    </div>
+    <div class="aside_info_inner">
+
+        <p>When you bring your vehicle to Ducatibox Car Mechanic Center, you can rest easy knowing that your vehicle is in professional hands.</p>
+
+        <div class="aside_info_inner_box">
+            <div class="wptb-office">
+                <div class="wptb-item--inner">
+                    <div class="wptb-item--subtitle">
+                        Call Us Anytime
+                    </div>
+                    <h5 class="wptb-item--title"><a href="tel:+12345677345">+123 45677345</a></h5>
+                </div>
+            </div>
+
+            <div class="wptb-office">
+                <div class="wptb-item--inner">
+                    <div class="wptb-item--subtitle">
+                        SEND US MAIL
+                    </div>
+                    <h5 class="wptb-item--title"><a href="mailto:ducatiboxcar@email.com">ducatiboxcar@email.com</a></h5>
+                </div>
+            </div>
+
+            <div class="wptb-office">
+                <div class="wptb-item--inner">
+                    <div class="wptb-item--subtitle">
+                        VISIT OUR WORKSHOP
+                    </div>
+                    <h5 class="wptb-item--title"><a href="#">17110 116th Ave SE Unit A
+                        Renton, WA 98058-5055</a></h5>
+                </div>
+            </div>
+        </div>
+        <div class="social_sites">
+            <ul class="d-flex align-items-center">
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Main Wrapper-->
+<main class="wrapper">
+    <div class="wptb-page-heading" style="background-image: url('/static/img/background/page-header-bg.jpg');">
+        <div class="container">
+            <div class="wptb-item--inner">
+                <h2 class="wptb-item--title ">Shop</h2>
+                <div class="wptb-breadcrumb-wrap">
+                    <ul class="wptb-breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><span>Shop</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="wptb-shop pd-bottom-300">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-9 col-md-8 pe-md-5">
+                    <div class="shop_filtering_method d-flex align-items-center flex-wrap">
+                        <div class="view_type_wrapper d-flex align-items-center">
+                            <ul class="nav view_type d-flex align-items-center">
+                                <li>
+                                    <a class="icon-grid active" id="grid-tab" data-bs-toggle="tab" href="#grid"><i class="bi bi-grid-3x3-gap-fill"></i></a>
+                                </li>
+                                <li>
+                                    <a class="icon-list" id="list-tab" data-bs-toggle="tab" href="#list"><i class="bi bi-list-task"></i></a>
+                                </li>
+                            </ul>
+                            <div class="showing_results">
+                                Showing 1-12 of 42 results
+                            </div>
+                        </div>
+                        <div class="sorting_wrapper">
+                            <div class="sorting_select">
+                                <select class="basic_select" id="sorting">
+                                    <option value="0">Default Sorting</option>
+                                    <option value="1">Title</option>
+                                    <option value="2">Price: Low to High</option>
+                                    <option value="3">Price: High to Low</option>
+                                    <option value="4">Popular</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="grid" role="tabpanel" aria-labelledby="grid-tab">
+                            <div class="product_view_grid product_col_3">
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <span class="badge-sale">Sale</span>
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/1.png" alt="img">
+                                            <div class="cart_button">
+                                                <a href="#" class="btn">
+                                                    Add to Cart 
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Oil Filters</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$45 <del class="old_price">$49.99</del></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/2.png" alt="img">
+                                            <div class="cart_button">
+                                                <a href="#" class="btn">
+                                                    Add to Cart 
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Transmission cog wheels</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$67</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/3.png" alt="img">
+                                            <div class="cart_button">
+                                                <a href="#" class="btn">
+                                                    Add to Cart 
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Starter motor</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$83 <del class="old_price">$88.99</del></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/4.png" alt="img">
+                                            <div class="cart_button">
+                                                <a href="#" class="btn">
+                                                    Add to Cart 
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Car disc brake</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$18</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <span class="badge-new">New</span>
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/5.png" alt="img">
+                                            <div class="cart_button">
+                                                <a href="#" class="btn">
+                                                    Add to Cart 
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Car headlight</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$234 <del class="old_price">$254.99</del></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <span class="badge-sale">Sale</span>
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/6.png" alt="img">
+                                            <div class="cart_button">
+                                                <a href="#" class="btn">
+                                                    Add to Cart 
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Aluminum disc</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$325</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/7.png" alt="img">
+                                            <div class="cart_button">
+                                                <a href="#" class="btn">
+                                                    Add to Cart 
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Transmission cog wheels</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$45 <del class="old_price">$49.99</del></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/8.png" alt="img">
+                                            <div class="cart_button">
+                                                <a href="#" class="btn">
+                                                    Add to Cart 
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">vehicle suspension</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$57</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <span class="badge-new">New</span>
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/9.png" alt="img">
+                                            <div class="cart_button">
+                                                <a href="#" class="btn">
+                                                    Add to Cart 
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Tyre changing Kit</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$311</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wptb-pagination-wrap text-center">
+                                    <ul class="pagination">
+                                        <li><a class="disabled page-number previous" href="#"><i class="bi bi-chevron-left"></i></a></li>
+                                        <li><span class="page-number current">1</span></li>
+                                        <li><a class="page-number" href="#">2</a></li>
+                                        <li><a class="page-number" href="#">3</a></li>
+                                        <li>.....</li>
+                                        <li><a class="page-number" href="#">9</a></li>
+                                        <li><a class="page-number next" href="#"><i class="bi bi-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+                            <!-- Product List View -->
+                            <div class="product_view_list">
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <span class="badge-sale">Sale</span>
+                                            <img class="primary_img" src="/static/img/shop/1.png" alt="img">
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Oil Filters</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$45 <del class="old_price">$49.99</del></div>
+                                                
+                                                <div class="cart_button">
+                                                    <a href="#" class="btn">
+                                                        Add to Cart 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/2.png" alt="img">
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Transmission cog wheels</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$67</div>
+                                                <div class="cart_button">
+                                                    <a href="#" class="btn">
+                                                        Add to Cart 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/3.png" alt="img">
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Starter motor</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$83 <del class="old_price">$88.99</del></div>
+                                                <div class="cart_button">
+                                                    <a href="#" class="btn">
+                                                        Add to Cart 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/4.png" alt="img">
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Car disc brake</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$18</div>
+                                                <div class="cart_button">
+                                                    <a href="#" class="btn">
+                                                        Add to Cart 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <span class="badge-new">New</span>
+                                            <img class="primary_img" src="/static/img/shop/5.png" alt="img">
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Car headlight</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$234 <del class="old_price">$254.99</del></div>
+                                                <div class="cart_button">
+                                                    <a href="#" class="btn">
+                                                        Add to Cart 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <span class="badge-sale">Sale</span>
+                                            <img class="primary_img" src="/static/img/shop/6.png" alt="img">
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Aluminum disc</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$325</div>
+                                                <div class="cart_button">
+                                                    <a href="#" class="btn">
+                                                        Add to Cart 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/7.png" alt="img">
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Transmission cog wheels</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$45 <del class="old_price">$49.99</del></div>
+                                                <div class="cart_button">
+                                                    <a href="#" class="btn">
+                                                        Add to Cart 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <img class="primary_img" src="/static/img/shop/8.png" alt="img">
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">vehicle suspension</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$57</div>
+                                                <div class="cart_button">
+                                                    <a href="#" class="btn">
+                                                        Add to Cart 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product_item">
+                                    <div class="product_thumb">
+                                        <div class="product_imagebox">
+                                            <span class="badge-new">New</span>
+                                            <img class="primary_img" src="/static/img/shop/9.png" alt="img">
+                                        </div>
+                                        <div class="product_item_inner">
+                                            <div class="label_text">
+                                                <h2 class="product_item_name"><a href="shop-product.html">Tyre changing Kit</a></h2>
+                                                <div class="product_item_rating">
+                                                    <ul>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product_item_price">$311</div>
+                                                <div class="cart_button">
+                                                    <a href="#" class="btn">
+                                                        Add to Cart 
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="wptb-pagination-wrap text-center">
+                                    <ul class="pagination">
+                                        <li><a class="disabled page-number previous" href="#"><i class="bi bi-chevron-left"></i></a></li>
+                                        <li><span class="page-number current">1</span></li>
+                                        <li><a class="page-number" href="#">2</a></li>
+                                        <li><a class="page-number" href="#">3</a></li>
+                                        <li>.....</li>
+                                        <li><a class="page-number" href="#">9</a></li>
+                                        <li><a class="page-number next" href="#"><i class="bi bi-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar  -->
+                <div class="col-lg-3 col-md-4 p-0 mt-5 mt-md-0">
+                    <div class="shop_sidebar">
+                        <div class="widget_block widget_search">
+                            <form method="get" class="wp-block-search">
+                                <div class="wp-block-search__inside-wrapper ">
+                                    <input type="search" class="wp-block-search__input" name="search" value="" placeholder="Search products..." required="">
+                                    <button type="submit" class="wp-block-search__button"><i class="bi bi-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="widget">
+                            <h2 class="widget-title">
+                                Categories
+                            </h2>
+                            <ul class="sidebar_category">
+                                <li class="category_item">
+                                    <div class="category_item_inner">
+                                        <div class="cat_name"><a href="#">Automobile</a></div>
+                                        <span class="cat_toggler">
+                                            <a data-bs-toggle="collapse" href="#tool_one">
+                                                <i class="bi bi-chevron-right"></i>
+                                            </a>
+                                        </span>
+                                    </div> 
+                                    <ul id="tool_one" class="child_category collapse">
+                                        <li>
+                                            <div class="cat_name"><a href="#">Ford</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="cat_name"><a href="#">Toyota</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="cat_name"><a href="#">BMW</a></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category_item">
+                                    <div class="category_item_inner">
+                                        <div class="cat_name"><a href="#">Car Parts</a></div>
+                                        <span class="cat_toggler">
+                                            <a data-bs-toggle="collapse" href="#tool_two">
+                                                <i class="bi bi-chevron-right"></i>
+                                            </a>
+                                        </span>
+                                    </div> 
+                                    <ul id="tool_two" class="child_category collapse">
+                                        <li>
+                                            <div class="cat_name"><a href="#">Mirror</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="cat_name"><a href="#">Door</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="cat_name"><a href="#">Wheel</a></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category_item">
+                                    <div class="category_item_inner">
+                                        <div class="cat_name"><a href="#">Speed</a></div>
+                                        <span class="cat_toggler">
+                                            <a data-bs-toggle="collapse" href="#tool_three">
+                                                <i class="bi bi-chevron-right"></i>
+                                            </a>
+                                        </span>
+                                    </div> 
+                                    <ul id="tool_three" class="child_category collapse">
+                                        <li>
+                                            <div class="cat_name"><a href="#">130km/h</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="cat_name"><a href="#">250km/h</a></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category_item">
+                                    <div class="category_item_inner">
+                                        <div class="cat_name"><a href="#">Outdoor</a></div>
+                                        <span class="cat_toggler">
+                                            <a data-bs-toggle="collapse" href="#tool_four">
+                                                <i class="bi bi-chevron-right"></i>
+                                            </a>
+                                        </span>
+                                    </div> 
+                                    <ul id="tool_four" class="child_category collapse">
+                                        <li>
+                                            <div class="cat_name"><a href="#">Tour</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="cat_name"><a href="#">Trip</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="cat_name"><a href="#">Transport</a></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category_item">
+                                    <div class="category_item_inner">
+                                        <div class="cat_name"><a href="#">Accessorries</a></div>
+                                        <span class="cat_toggler">
+                                            <a data-bs-toggle="collapse" href="#tool_five">
+                                                <i class="bi bi-chevron-right"></i>
+                                            </a>
+                                        </span>
+                                    </div> 
+                                    <ul id="tool_five" class="child_category collapse">
+                                        <li>
+                                            <div class="cat_name"><a href="#">Wheel</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="cat_name"><a href="#">Oil Filter</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="cat_name"><a href="#">Window Glass</a></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category_item">
+                                    <div class="category_item_inner">
+                                        <div class="cat_name"><a href="#">Color</a></div>
+                                        <span class="cat_toggler">
+                                            <a data-bs-toggle="collapse" href="#tool_six">
+                                                <i class="bi bi-chevron-right"></i>
+                                            </a>
+                                        </span>
+                                    </div> 
+                                    <ul id="tool_six" class="child_category collapse">
+                                        <li>
+                                            <div class="cat_name"><a href="#">Red</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="cat_name"><a href="#">Black</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="cat_name"><a href="#">White</a></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="category_item">
+                                    <div class="category_item_inner">
+                                        <div class="cat_name"><a href="#">Detailing</a></div>
+                                        <span class="cat_toggler">
+                                            <a data-bs-toggle="collapse" href="#tool_seven">
+                                                <i class="bi bi-chevron-right"></i>
+                                            </a>
+                                        </span>
+                                    </div> 
+                                    <ul id="tool_seven" class="child_category collapse">
+                                        <li>
+                                            <div class="cat_name"><a href="#">Car Wash</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="cat_name"><a href="#">Oil Change</a></div>
+                                        </li>
+                                        <li>
+                                            <div class="cat_name"><a href="#">Engine Servicing</a></div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="widget">
+                            <h2 class="widget-title">
+                                Price Filter
+                            </h2>
+                            <div class="sidebar_price_filter"> 
+                                <div id="slider-range" class="range-bar"></div> 
+                                <div class="range-value d-flex justify-content-end">
+                                    <span>Price:</span> <input type="text" id="amount" readonly />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="widget">
+                            <h2 class="widget-title">
+                                Filter By Type
+                            </h2>
+                            <div class="sidebar_brand"> 
+                                <form action="https://wpthemebooster.com/demo/themeforest/html/ducatibox/checkout.php" method="post">
+                                    <div class="form-check">
+                                        <label for="checkbox7">Automobile</label>
+                                        <input type="checkbox" class="form-check-input" id="checkbox7" name="checkbox7" value="">
+                                    </div>                                
+                                    <div class="form-check">
+                                        <label for="checkbox8">Bike</label>
+                                        <input type="checkbox" class="form-check-input" id="checkbox8" name="checkbox8" checked value="">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="widget">
+                            <h2 class="widget-title">
+                                Filter by Brand
+                            </h2>
+                            <div class="sidebar_brand"> 
+                                <form action="https://wpthemebooster.com/demo/themeforest/html/ducatibox/checkout.php" method="post">
+                                    <div class="form-check">
+                                        <label for="checkbox1">Powerpack (32)</label>
+                                        <input type="checkbox" class="form-check-input" id="checkbox1" name="checkbox1" value="">
+                                    </div>                                
+                                    <div class="form-check">
+                                        <label for="checkbox2">Crossfit (09)</label>
+                                        <input type="checkbox" class="form-check-input" id="checkbox2" name="checkbox2" checked value="">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="checkbox3">Metal Sans (02)</label>
+                                        <input type="checkbox" class="form-check-input" id="checkbox3" name="checkbox3" value="">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="checkbox4">Walmart (12)</label>
+                                        <input type="checkbox" class="form-check-input" id="checkbox4" name="checkbox4" value="">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="checkbox5">Chevron (22)</label>
+                                        <input type="checkbox" class="form-check-input" id="checkbox5" name="checkbox5" value="">
+                                    </div>
+                                    <div class="form-check">
+                                        <label for="checkbox6">Adidas (16)</label>
+                                        <input type="checkbox" class="form-check-input" id="checkbox6" name="checkbox6" value="">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="widget">
+                            <h2 class="widget-title">
+                                Popular Products
+                            </h2>
+                            
+                            <div class="products-list">
+                                <ul class="popular_product_list">
+                                    <li class="popular_product_item">
+                                        <div class="popular_product_image">
+                                            <img class="primary_img" src="/static/img/shop/1.png" alt="">
+                                        </div>
+                                        <div class="popular_product_content">
+                                            <h5 class="product_title"><a href="shop-product.html">Oil Filters</a></h5>
+                                            <h6 class="product_price">$45 <del>49.99</del></h6>
+                                        </div>
+                                    </li>
+                                    <li class="popular_product_item">
+                                        <div class="popular_product_image">
+                                            <img class="primary_img" src="/static/img/shop/2.png" alt="">
+                                        </div>
+                                        <div class="popular_product_content">
+                                            <h5 class="product_title"><a href="shop-product.html">Transmission cog wheels</a></h5>
+                                            <h6 class="product_price">$67</h6>
+                                        </div>
+                                    </li>
+                                    <li class="popular_product_item">
+                                        <div class="popular_product_image">
+                                            <img class="primary_img" src="/static/img/shop/3.png" alt="">
+                                        </div>
+                                        <div class="popular_product_content">
+                                            <h5 class="product_title"><a href="shop-product.html">Starter motor</a></h5>
+                                            <h6 class="product_price">$83</h6>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="widget">
+                            <h2 class="widget-title">
+                                Product Tag
+                            </h2>
+                            <div class="wp-block-tag-list wp-block-tag">
+                                <a href="#" class="tag-cloud-link">Automobile</a>
+                                <a href="#" class="tag-cloud-link">Engine</a>
+                                <a href="#" class="tag-cloud-link">Carwash</a>
+                                <a href="#" class="tag-cloud-link">Detailing</a>
+                                <a href="#" class="tag-cloud-link">Mechanic</a>
+                                <a href="#" class="tag-cloud-link">Motor</a>
+                                <a href="#" class="tag-cloud-link">Speed</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+{% include 'footer.html' %} {% include 'script.html' %}

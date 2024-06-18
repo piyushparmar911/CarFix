@@ -31,5 +31,20 @@ def caseDetail(request):
 
 def ourTeam(request):
     return render(request, 'ourTeam.html')
+
+def shop(request):
+    return render(request, 'shop.html')
+
+def products(request):
+    return render(request, 'products.html')
+
+def cart(request):
+    return render(request, 'cart.html')
+
+def checkout(request):
+    return render(request, 'checkout.html')
+
+def login(request):
+    return render(request, 'login.html')
     
 

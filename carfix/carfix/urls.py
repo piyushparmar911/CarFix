@@ -32,6 +32,11 @@ urlpatterns = [
     path('caseList/', views.caseList , name='caseList'),
     path('caseDetail/', views.caseDetail , name='caseDetail'),
     path('ourTeam/', views.ourTeam , name='ourTeam'),
+    path('shp/', views.shop , name='shop'),
+    path('products/', views.products , name='products'),
+    path('cart/', views.cart , name='cart'),
+    path('checkout/', views.checkout , name='checkout'),
+    path('login/', views.login , name='login')
     # path('home', views.home),
 ]
 

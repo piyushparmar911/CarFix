@@ -26,7 +26,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index,name='index'),
     path('about/', views.about , name='about'),
-    path('services/', views.services , name='services')
+    path('services/', views.services , name='services'),
+    path('contect/', views.contect , name='contect'),
+    path('review/', views.review , name='review'),
     # path('home', views.home),
 ]
 

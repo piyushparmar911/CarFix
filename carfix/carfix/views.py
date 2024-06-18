@@ -14,5 +14,11 @@ def about(request):
 
 def services(request):
     return render(request, 'services.html')
+
+def contect(request):
+    return render(request, 'contect.html')
+
+def review(request):
+    return render(request, 'review.html')
     
 

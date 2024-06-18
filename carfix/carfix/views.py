@@ -20,5 +20,12 @@ def contect(request):
 
 def review(request):
     return render(request, 'review.html')
+
+def caseList(request):
+    return render(request, 'caseList.html')
+
+
+def caseDetail(request):
+    return render(request, 'caseDetail.html')
     
 

@@ -29,6 +29,8 @@ urlpatterns = [
     path('services/', views.services , name='services'),
     path('contect/', views.contect , name='contect'),
     path('review/', views.review , name='review'),
+    path('caseList/', views.caseList , name='caseList'),
+    path('caseDetail/', views.caseDetail , name='caseDetail'),
     # path('home', views.home),
 ]
 

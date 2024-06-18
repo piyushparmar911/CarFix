@@ -1,2 +1,209 @@
 {% include 'header.html' %} {% load static %}
+<!-- Mobile Responsive Menu -->
+<div class="mr_menu">
+    <button type="button" class="mr_menu_close"><i class="bi bi-x-lg"></i></button>
+    <div class="logo"></div> <!-- Keep this div empty. Logo will come here by JavaScript -->
+    <div class="mr_navmenu"></div> <!-- Keep this div empty. Menu will come here by JavaScript -->
+</div>
+
+<div class="aside_info_wrapper">
+    <button class="aside_close"><i class="bi bi-x-lg"></i></button>
+    <div class="aside_logo">
+        <a href="index.html"><img src="/static/img/logo.svg" alt="logo"></a>
+    </div>
+    <div class="aside_info_inner">
+
+        <p>When you bring your vehicle to Ducatibox Car Mechanic Center, you can rest easy knowing that your vehicle is in professional hands.</p>
+
+        <div class="aside_info_inner_box">
+            <div class="wptb-office">
+                <div class="wptb-item--inner">
+                    <div class="wptb-item--subtitle">
+                        Call Us Anytime
+                    </div>
+                    <h5 class="wptb-item--title"><a href="tel:+12345677345">+123 45677345</a></h5>
+                </div>
+            </div>
+
+            <div class="wptb-office">
+                <div class="wptb-item--inner">
+                    <div class="wptb-item--subtitle">
+                        SEND US MAIL
+                    </div>
+                    <h5 class="wptb-item--title"><a href="mailto:ducatiboxcar@email.com">ducatiboxcar@email.com</a></h5>
+                </div>
+            </div>
+
+            <div class="wptb-office">
+                <div class="wptb-item--inner">
+                    <div class="wptb-item--subtitle">
+                        VISIT OUR WORKSHOP
+                    </div>
+                    <h5 class="wptb-item--title"><a href="#">17110 116th Ave SE Unit A
+                        Renton, WA 98058-5055</a></h5>
+                </div>
+            </div>
+        </div>
+        <div class="social_sites">
+            <ul class="d-flex align-items-center">
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-twitter-x"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Main Wrapper-->
+<main class="wrapper">
+    <div class="wptb-page-heading" style="background-image: url('/static/img/background/page-header-bg.jpg');">
+        <div class="container">
+            <div class="wptb-item--inner">
+                <h2 class="wptb-item--title ">Shop Cart</h2>
+                <div class="wptb-breadcrumb-wrap">
+                    <ul class="wptb-breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><span>Cart</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart -->
+    <section class="shopping_cart pd-bottom-300">
+        <div class="container">
+            <form action="https://wpthemebooster.com/demo/themeforest/html/ducatibox/checkout.php" method="POST">
+                <table class="cart_table">
+                    <tr class="cart_header">
+                        <th class="cart_header_image">Image</th>
+                        <th class="cart_header_title">Product</th>
+                        <th class="cart_header_price">Price</th>
+                        <th class="cart_header_quantity">Quantity</th>
+                        <th class="cart_header_total">SubTotal</th>
+                        <th class="cart_header_removal"></th>
+                    </tr>
+                    <tr class="cart_content">
+                        <td class="cart_image"><img src="/static/img/shop/2.png" alt="img"/></td>
+                        <td class="cart_title">Transmission cog
+                            wheels</td>
+                        <td class="cart_price">$<span class="product_per_price" data-price="22">22</span></td>
+                        <td class="cart_quantity">
+                            <div class="product_quantity_inner">
+                                <span class="qty_btn product_quantity_subtract">
+                                    <i class="bi bi-dash-lg"></i>
+                                </span>
+                                    <input type="text" id="product_quantity_input" placeholder="0" value="1">
+                                <span class="qty_btn product_quantity_add">
+                                    <i class="bi bi-plus-lg"></i>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="cart_total">$<span class="product_total_price">22</span></td>
+                        <td class="cart_removal"><a href="#"><i class="bi bi-x-lg"></i></a></td>
+                    </tr>
+                    <tr class="cart_content">
+                        <td class="cart_image"><img src="/static/img/shop/3.png" alt="img"/></td>
+                        <td class="cart_title">Starter motor</td>
+                        <td class="cart_price">$<span class="product_per_price">17</span></td>
+                        <td class="cart_quantity">
+                            <div class="product_quantity_inner">
+                                <span class="product_quantity_subtract">
+                                    <i class="bi bi-dash-lg"></i>
+                                </span>
+                                    <input type="text" id="product_quantity_input" placeholder="0" value="1">
+                                <span class="product_quantity_add">
+                                    <i class="bi bi-plus-lg"></i>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="cart_total">$<span class="product_total_price">17</span></td>
+                        <td class="cart_removal"><a href="#"><i class="bi bi-x-lg"></i></a></td>
+                    </tr>
+                    <tr class="cart_content">
+                        <td class="cart_image"><img src="/static/img/shop/4.png" alt="img"/></td>
+                        <td class="cart_title">Car disc brake</td>
+                        <td class="cart_price">$<span class="product_per_price">250</span></td>
+                        <td class="cart_quantity">
+                            <div class="product_quantity_inner">
+                                <span class="product_quantity_subtract">
+                                    <i class="bi bi-dash-lg"></i>
+                                </span>
+                                    <input type="text" id="product_quantity_input" placeholder="0" value="1">
+                                <span class="product_quantity_add">
+                                    <i class="bi bi-plus-lg"></i>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="cart_total">$<span class="product_total_price">250</span></td>
+                        <td class="cart_removal"><a href="#"><i class="bi bi-x-lg"></i></a></td>
+                    </tr>
+                    <tr class="cart_content">
+                        <td class="cart_image"><img src="/static/img/shop/8.png" alt="img"/></td>
+                        <td class="cart_title">Vehicle Suspension</td>
+                        <td class="cart_price">$<span class="product_per_price">445</span></td>
+                        <td class="cart_quantity">
+                            <div class="product_quantity_inner">
+                                <span class="product_quantity_subtract">
+                                    <i class="bi bi-dash-lg"></i>
+                                </span>
+                                    <input type="text" id="product_quantity_input" placeholder="0" value="1">
+                                <span class="product_quantity_add">
+                                    <i class="bi bi-plus-lg"></i>
+                                </span>
+                            </div>
+                        </td>
+                        <td class="cart_total">$<span class="product_total_price">445</span></td>
+                        <td class="cart_removal"><a href="#"><i class="bi bi-x-lg"></i></a></td>
+                    </tr>
+                </table>
+                <div class="couponcart">
+                    <div class="set_coupon">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="coupon" placeholder="Coupon Code">
+                        </div>
+                        <button type="submit" class="btn-three">
+                            <div class="btn-wrap">
+                                <span class="text-first">Apply Coupon</span>
+                                <span class="text-second">Apply Coupon</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="cartupdate">
+                        <button type="submit" class="btn-three white">
+                            <div class="btn-wrap">
+                                <span class="text-first">Update Cart</span>
+                                <span class="text-second">Update Cart</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-lg-6 p-lg-0">
+                    <div class="grand_total">
+                        <h4 class="widget-title mr-bottom-30">Cart Total </h4>
+                        <ul>
+                            <li><span class="text">Subtotal</span> <span class="value total_price">$1500</span></li>
+                            <li class="shippinginfo"><span class="text">Shipping</span> <span class="value">Enter your address to view shipping options.
+                                Calculate Shipping</span></li>
+                            <li class="totalvalue"><span class="text">Total</span> <span class="value">$1700</span></li>
+                        </ul>
+                        
+                        <div class="wptb-item--button mr-top-40">
+                            <button type="submit" class="btn-three white">
+                                <div class="btn-wrap">
+                                    <span class="text-first">Proceed To Checkout</span>
+                                    <span class="text-second">Proceed To Checkout</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 {% include 'footer.html' %} {% include 'script.html' %}

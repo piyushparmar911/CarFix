@@ -27,5 +27,9 @@ def caseList(request):
 
 def caseDetail(request):
     return render(request, 'caseDetail.html')
+
+
+def ourTeam(request):
+    return render(request, 'ourTeam.html')
     
 

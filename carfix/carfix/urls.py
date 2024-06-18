@@ -31,6 +31,7 @@ urlpatterns = [
     path('review/', views.review , name='review'),
     path('caseList/', views.caseList , name='caseList'),
     path('caseDetail/', views.caseDetail , name='caseDetail'),
+    path('ourTeam/', views.ourTeam , name='ourTeam'),
     # path('home', views.home),
 ]
 
